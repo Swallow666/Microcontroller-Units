@@ -32,5 +32,5 @@ int main()
 	cout<<"The time first press sw5 is "<<capture_val<<" clock cycles."<<endl;
 	cout<<"The time second press sw5 is "<<new_capture_val<<" clock cycles."<<endl;
 	cout<<"The time between sw5 press is "<<time_between_sw5<<" clock cycles."<<endl;
-	return 0;
+	return 0; 
 }
