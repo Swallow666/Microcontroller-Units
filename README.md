@@ -1,3 +1,3 @@
-# COEN317 Microcontroller
+# Microcontroller units
 ### This repo mainly includes some C++ code based on Xilinx SDK
-Microcontroller (planAhead, XPS, SDK, ZC702_board, C++, VHDL, UCF, IP, hardware)
+317 Microcontroller (planAhead, XPS, SDK, ZC702_board, C++, VHDL, UCF, IP, hardware)
