@@ -48,13 +48,13 @@ int main()
 	status = *(cdma_base_address+1);
 	cout<<"After flushing the cache, status is: ";
 	cout << std::hex << status << endl;
-	*(cdma_base_address+10) = 0xFFFFFFFF;  //write in BTT, initiates simple DMA transfer
+	*(cdma_base_address+10) = 0x28;  //write in BTT 0x00000028, means 40 bytes to transfer (10 integers), initiates simple DMA transfer
 	status = *(cdma_base_address+1);
 	cout<<"When transfer bytes, status is: ";
 	cout << std::hex << status << endl;
 	while(status!=2)  //when status!=2 => not idle, wait...
 	{
-		status = *(cdma_base_address+1) & 0x00000002;  //wait till complete transfer and idle again
+		status = *(cdma_base_address+1) & 0x2;  //wait till complete transfer and idle again
 	}
 	cout<<"After transfer, status is: ";
 	cout << std::hex << status << endl;
